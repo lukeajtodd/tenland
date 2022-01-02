@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --b1: 222 47% 11%;
+}
+
+@layer components {
+  .main-gradient {
+    @apply from-rose-800 via-orange-500 to-amber-400;
+  }
+
+  @media (hover: hover) {
+    .main-gradient:hover {
+      @apply from-rose-700 via-orange-400 to-amber-300;
+    }
+  }
+}
