@@ -51,6 +51,50 @@ const Home: NextPage = () => {
           </p>
         </div>
       </div>
+      <div className="container pt-10 md:pt-24 lg:pt-36 mx-auto flex flex-wrap flex-col md:flex-row justify-center">
+        <div className="w-full xl:w-4/5 grid">
+          <div className="w-full lg:w-2/3">
+            <h2 className="text-2xl md:text-4xl lg:text-7xl text-body font-bold leading-tight">
+              For Tenants
+            </h2>
+            <ul>
+              <li>Earn while you rent. Be a great tenant and get rewarded.</li>
+              <li>
+                Either sell your reward <strong>TEN</strong>/
+                <strong>sTEN</strong> or stake it to have a say in the platform.
+              </li>
+              <li>
+                Use your <strong>TEN</strong> &amp; <strong>sTEN</strong> with
+                our partners for further rewards.
+              </li>
+            </ul>
+          </div>
+          <div className="justify-self-end lg:w-2/3 pt-10 md:pt-24 lg:pt-36">
+            <h2 className="text-2xl md:text-4xl lg:text-7xl text-body font-bold leading-tight">
+              For Landlords
+            </h2>
+            <ul>
+              <li>
+                <strong>TEN</strong> will be used to list properties, with the
+                power to promote these properties to increase your likelihood of
+                finding a tenant
+              </li>
+              <li>
+                NFTs will be minted to certify that you have listed a specific
+                property on the platform.
+              </li>
+              <li>
+                By providing positive reviews for your tenants you will actively
+                reward them without any financial input from you.
+              </li>
+              <li>
+                The best tenants are happy ones. With the rewards Tenland
+                offers, they&apos;ll be the happiest around.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div className="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col md:flex-row justify-center">
         <div className="w-full xl:w-4/5">
           <div className="flex flex-col items-center">
@@ -102,58 +146,15 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className="container pt-10 md:pt-24 lg:pt-36 mx-auto flex flex-wrap flex-col md:flex-row justify-center">
-        <div className="w-full xl:w-4/5 grid">
-          <div className="w-full lg:w-2/3">
-            <h2 className="text-2xl md:text-4xl lg:text-7xl text-body font-bold leading-tight">
-              For Tenants
-            </h2>
-            <ul>
-              <li>Earn while you rent. Be a great tenant and get rewarded.</li>
-              <li>
-                Either sell your reward <strong>TEN</strong>/
-                <strong>sTEN</strong> or stake it to have a say in the platform.
-              </li>
-              <li>
-                Use your <strong>TEN</strong> &amp; <strong>sTEN</strong> with
-                our partners for further rewards.
-              </li>
-            </ul>
-          </div>
-          <div className="justify-self-end lg:w-2/3 pt-10 md:pt-24 lg:pt-36">
-            <h2 className="text-2xl md:text-4xl lg:text-7xl text-body font-bold leading-tight">
-              For Landlords
-            </h2>
-            <ul>
-              <li>
-                <strong>TEN</strong> will be used to list properties, with the
-                power to promote these properties to increase your likelihood of
-                finding a tenant
-              </li>
-              <li>
-                NFTs will be minted to certify that you have listed a specific
-                property on the platform.
-              </li>
-              <li>
-                By providing positive reviews for your tenants you will actively
-                reward them without any financial input from you.
-              </li>
-              <li>
-                The best tenants are happy ones. With the rewards Tenland
-                offers, they&apos;ll be the happiest around.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div className="container pt-10 md:pt-24 lg:pt-36 mx-auto flex flex-wrap flex-col md:flex-row justify-center">
         <div className="w-full xl:w-4/5">
           <h2 className="text-2xl md:text-4xl lg:text-7xl text-body font-bold leading-tight">
             Roadmap
           </h2>
           {
-            roadmap.map(item => (
+            roadmap.map((item, index) => (
               <Card
                 className="mb-8"
+                key={index}
                 {...item}
               />
             ))
@@ -165,7 +166,7 @@ const Home: NextPage = () => {
           <div className="overflow-y-hidden">
             <div className="w-full flex flex-wrap flex-row">
               <div className="w-full lg:w-1/2">
-                <h2 className="text-2xl md:text-4xl lg:text-7xl text-body font-bold leading-tight">
+                <h2 className="text-2xl md:text-4xl lg:text-7xl text-body font-bold leading-tight lg:pr-8">
                   Keep up to date...
                 </h2>
               </div>
