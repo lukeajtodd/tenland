@@ -25,8 +25,8 @@ const Home: NextPage = () => {
           </p>
           <p className="text-xl md:text-2xl">
             This will be achieved via a rewards scheme that puts actions to the
-            test, rewarding the positive. The hope filled aim is a better
-            interaction between landlords and tenants.
+            test, rewarding the positive. The hope filled aim is an improved
+            interaction between both parties.
           </p>
         </div>
       </div>

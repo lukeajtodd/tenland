@@ -3,7 +3,7 @@ const Navigation = () => {
     <div className="w-full container mx-auto">
       <div className="w-full flex items-center justify-between">
         <a
-          className="flex items-center text-primary no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+          className="header flex items-center text-primary no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
           href="#"
         >
           Tenland
