@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --b1: 222 47% 11%;
+  @apply bg-background;
+}
+
+body,
+small {
+  @apply text-body;
 }
 
 @layer components {

@@ -3,18 +3,15 @@ const Navigation = () => {
     <div className="w-full container mx-auto">
       <div className="w-full flex items-center justify-between">
         <a
-          className="flex items-center text-red-700 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+          className="flex items-center text-primary no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
           href="#"
         >
-          Ten
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-800 via-orange-500 to-amber-400">
-            land
-          </span>
+          Tenland
         </a>
 
         <div className="flex w-1/2 justify-end content-center">
           <a
-            className="inline-block text-amber-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+            className="inline-block text-primary no-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
             href="https://twitter.com/intent/tweet?url=#"
           >
             <svg
@@ -26,7 +23,7 @@ const Navigation = () => {
             </svg>
           </a>
           <a
-            className="inline-block text-amber-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+            className="inline-block text-primary no-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
             href="https://www.facebook.com/sharer/sharer.php?u=#"
           >
             <svg

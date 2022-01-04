@@ -25,7 +25,7 @@ const Layout: FC<{}> = ({ children }) => {
       <div className="primary-header leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed">
         <div className="h-screen p-6">
           <Navigation />
-          <main>{children}</main>
+          <main className="py-24">{children}</main>
         </div>
       </div>
     </>
