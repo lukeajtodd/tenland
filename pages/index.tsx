@@ -9,21 +9,68 @@ const Home: NextPage = () => {
   const roadmap = [
     {
       title: 'Phase 0',
-      date: 'TBD',
+      date: '28th February 2022',
       content:
-        'Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus veritatis sed molestiae voluptates incidunt iure sapiente.',
+        'Gauge initial interest at a base level before the project goes too far.',
     },
     {
-      title: 'Phase 1',
-      date: 'TBD',
+      title: 'The Platform',
+      date: '31st March 2022',
       content:
-        'Rerum reiciendis beatae tenetur excepturi aut pariatur est eos.',
+        'Creation of the user-facing UI along with any dashboards, control centers and profiles (A general idea of the smart contract layer will be organised and verified at this stage as well).',
     },
     {
-      title: 'Phase 2',
+      title: 'The Platform Part 2',
+      date: '31st April 2022',
+      content:
+        'Creation of the smart contracts that will handle the TEN token, property NFT generation and staking and reward systems. This will be the deciding moment for which chain this is going to run with.',
+    },
+    {
+      title: 'Security Audit',
       date: 'TBD',
       content:
-        'Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus veritatis sed molestiae voluptates incidunt iure sapiente. Rerum reiciendis beatae tenetur excepturi aut pariatur est eos, rerum reiciendis est eos. ',
+        'Get the smart contracts verified by at least one independent organisation.',
+    },
+    {
+      title: 'Alpha Release',
+      date: 'TBD',
+      content:
+        'Time to test everything out. Allowing a small number of people into a sandboxed version of the application to see how everything works together over a month or two.',
+    },
+    {
+      title: 'The Platform Part 3: The Thirdening',
+      date: 'TBD',
+      content:
+        'Make any adjustments to the UI, any alpha influenced features added and further adjustments to the  smart contracts layer (along with another audit).',
+    },
+    {
+      title: 'Beta Release',
+      date: 'TBD',
+      content:
+        'Still running on a test network to finalise any changes or bugs that may have arisen.',
+    },
+    {
+      title: 'The Platform Part IV',
+      date: 'TBD',
+      content:
+        'Final run through of everything UI, styling, smart contract, etc.',
+    },
+    {
+      title: 'Smart Contract Layer Release',
+      date: 'TBD',
+      content:
+        'Ship the smart contracts layer onto whatever the decided chain is. Throw out some TEN based rewards for the lovely people that have helped so far.',
+    },
+    {
+      title: 'Full Deployment & Release',
+      date: 'TBD',
+      content: "Deploy the platform in it's entirety.",
+    },
+    {
+      title: 'DAO',
+      date: 'TBD',
+      content:
+        'Configure the DAO so that people involved in the platform can start to push new ideas forward. Maybe charitable work, up and coming investments, short term stay platform extensions, property purchase and sale extension?!',
     },
   ]
 
@@ -40,9 +87,9 @@ const Home: NextPage = () => {
       <div className="container pt-0 mx-auto flex flex-wrap flex-col md:flex-row justify-center">
         <div className="w-full xl:w-4/5">
           <p className="text-xl md:text-2xl">
-            Tenland is a platform aiming to alter the status quo between
+            Tenland is a platform that will alter the status quo between
             landlords &amp; tenants. Creating an ecosystem of{' '}
-            <strong>fairness</strong> and <strong>happy living</strong>.
+            <strong>fairness</strong> and <strong>happier living</strong>.
           </p>
           <p className="text-xl md:text-2xl">
             This will be achieved via a rewards scheme that puts actions to the
@@ -150,15 +197,13 @@ const Home: NextPage = () => {
           <h2 className="text-2xl md:text-4xl lg:text-7xl text-body font-bold leading-tight">
             Roadmap
           </h2>
-          {
-            roadmap.map((item, index) => (
-              <Card
-                className="mb-8"
-                key={index}
-                {...item}
-              />
-            ))
-          }
+          <div className="flex flex-row flex-wrap">
+            {roadmap.map((item, index) => (
+              <div className="md:pr-8 w-full">
+                <Card className="mb-8" key={index} {...item} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <div className="container pt-10 md:pt-24 lg:pt-36 mx-auto flex flex-wrap flex-col md:flex-row justify-center">
