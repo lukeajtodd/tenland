@@ -6,7 +6,7 @@ const Navigation = () => {
           className="header flex items-center text-primary no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
           href="#"
         >
-          Tenland
+          <img className="header-logo" src="/logo-orange.svg" alt="Tenland" />
         </a>
 
         <div className="flex w-1/2 justify-end content-center">

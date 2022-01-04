@@ -47,6 +47,10 @@ ul {
     @apply from-rose-800 via-orange-500 to-amber-400;
   }
 
+  .header-logo {
+    width: 220px;
+  }
+
   .has-circle {
     position: relative;
     margin-bottom: 2.5ch;
