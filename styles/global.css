@@ -47,28 +47,32 @@ ul {
     @apply from-rose-800 via-orange-500 to-amber-400;
   }
 
-  .has-divider {
+  .has-circle {
     position: relative;
+    margin-bottom: 2.5ch;
+    margin-top: 1.5ch;
   }
 
-  .has-divider::before,
-  .has-divider::after  {
+  .has-circle::before  {
     content: "";
-    width: 100%;
+    width: 5.5ch;
+    height: 5.5ch;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    @apply h-1 lg:h-2 bg-primary;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-width: 0.5rem;
+    border-radius: 50%;
+    @apply border-primary;
   }
 
-  .has-divider::before {
-    left: 50%;
-    transform: translate(-175%, -50%);
-  } 
+  .has-circle--thick {
+    margin-bottom: 3ch;
+    margin-top: 2ch;
+  }
 
-  .has-divider::after {
-    right: 50%;
-    transform: translate(175%, -50%);
+  .has-circle--thick::before {
+    border-width: 1rem;
   }
 
   @media (hover: hover) {

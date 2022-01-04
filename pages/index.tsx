@@ -32,7 +32,7 @@ const Home: NextPage = () => {
       <div className="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col md:flex-row justify-center">
         <div className="w-full xl:w-4/5">
           <div className="flex flex-col items-center">
-            <h2 className="text-2xl md:text-4xl lg:text-7xl text-body font-bold leading-tight text-center has-divider">
+            <h2 className="text-2xl md:text-4xl lg:text-7xl text-body font-bold leading-tight text-center has-circle lg:has-circle--thick">
               TEN
             </h2>
             <div className="w-full xl:w-4/5">
