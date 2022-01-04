@@ -7,13 +7,56 @@
 }
 
 body,
-small {
+small,
+li,
+p {
   @apply text-body;
+}
+
+h2 {
+  @apply mb-7 lg:mb-9 xl:mb-12;
+}
+
+h3 {
+  @apply mb-5 lg:mb-7 xl:mb-9;
+}
+
+p, li {
+  @apply mb-4 text-lg lg:text-xl;
+}
+
+ul {
+  padding-left: 25px;
+  list-style: square outside none;
 }
 
 @layer components {
   .main-gradient {
     @apply from-rose-800 via-orange-500 to-amber-400;
+  }
+
+  .has-divider {
+    position: relative;
+  }
+
+  .has-divider::before,
+  .has-divider::after  {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @apply h-1 lg:h-2 bg-primary;
+  }
+
+  .has-divider::before {
+    left: 50%;
+    transform: translate(-175%, -50%);
+  } 
+
+  .has-divider::after {
+    right: 50%;
+    transform: translate(175%, -50%);
   }
 
   @media (hover: hover) {

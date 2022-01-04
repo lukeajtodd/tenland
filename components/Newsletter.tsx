@@ -1,7 +1,7 @@
 const Newsletter = () => {
   return (
     <form className="w-full mb-4">
-      <div className="mt-4">
+      <div className="lg:mt-4">
         <label
           className="sr-only"
           htmlFor="emailaddress"
