@@ -74,6 +74,8 @@ const Home: NextPage = () => {
     },
   ]
 
+  const currentStage = 0
+
   return (
     <>
       <div className="container py-24 md:py-36 mx-auto flex flex-wrap flex-col md:flex-row justify-center items-center">
@@ -199,8 +201,8 @@ const Home: NextPage = () => {
           </h2>
           <div className="flex flex-row flex-wrap">
             {roadmap.map((item, index) => (
-              <div className="md:pr-8 w-full">
-                <Card className="mb-8" key={index} {...item} />
+              <div className="md:pr-8 w-full" key={index}>
+                <Card className="mb-8" {...item} />
               </div>
             ))}
           </div>
