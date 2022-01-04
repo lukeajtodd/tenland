@@ -118,7 +118,7 @@ const Home: NextPage = () => {
               </li>
               <li>
                 The best tenants are happy ones. With the rewards Tenland
-                offers, they'll be the happiest around.
+                offers, they&apos;ll be the happiest around.
               </li>
             </ul>
           </div>
