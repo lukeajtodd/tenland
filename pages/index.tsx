@@ -3,8 +3,30 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import Newsletter from '../components/Newsletter'
+import Card from '../components/Card'
 
 const Home: NextPage = () => {
+  const roadmap = [
+    {
+      title: 'Phase 0',
+      date: 'TBD',
+      content:
+        'Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus veritatis sed molestiae voluptates incidunt iure sapiente.',
+    },
+    {
+      title: 'Phase 1',
+      date: 'TBD',
+      content:
+        'Rerum reiciendis beatae tenetur excepturi aut pariatur est eos.',
+    },
+    {
+      title: 'Phase 2',
+      date: 'TBD',
+      content:
+        'Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus veritatis sed molestiae voluptates incidunt iure sapiente. Rerum reiciendis beatae tenetur excepturi aut pariatur est eos, rerum reiciendis est eos. ',
+    },
+  ]
+
   return (
     <>
       <div className="container py-24 md:py-36 mx-auto flex flex-wrap flex-col md:flex-row justify-center items-center">
@@ -121,6 +143,21 @@ const Home: NextPage = () => {
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+      <div className="container pt-10 md:pt-24 lg:pt-36 mx-auto flex flex-wrap flex-col md:flex-row justify-center">
+        <div className="w-full xl:w-4/5">
+          <h2 className="text-2xl md:text-4xl lg:text-7xl text-body font-bold leading-tight">
+            Roadmap
+          </h2>
+          {
+            roadmap.map(item => (
+              <Card
+                className="mb-8"
+                {...item}
+              />
+            ))
+          }
         </div>
       </div>
       <div className="container pt-10 md:pt-24 lg:pt-36 mx-auto flex flex-wrap flex-col md:flex-row justify-center">
