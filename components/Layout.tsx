@@ -21,6 +21,10 @@ const Layout: FC<{}> = ({ children }) => {
           href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Sora:wght@300;400;600;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <div className="primary-header leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed">
         <div className="h-screen p-6">

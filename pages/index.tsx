@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import Newsletter from '../components/Newsletter'
-import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
   return (
