@@ -12,6 +12,13 @@ const Layout: FC<{}> = ({ children }) => {
         <title>Tenland - The new face of rentals</title>
         <meta name="description" content="A platform for Landlords and Tenants to live happier more profitable lives." />
         <meta name="keywords" content="Tenant, Landlord, Rental, Lease, Tenancy, Crypto, TEN, Cryptocurrency" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d97307" />
+        <meta name="msapplication-TileColor" content="#d97307" />
+        <meta name="theme-color" content="#d97307" />
 
         <link
           rel="stylesheet"
