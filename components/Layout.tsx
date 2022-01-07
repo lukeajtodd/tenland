@@ -10,8 +10,8 @@ const Layout: FC<{}> = ({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <title>Tenland - The new face of rentals</title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
+        <meta name="description" content="A platform for Landlords and Tenants to live happier more profitable lives." />
+        <meta name="keywords" content="Tenant, Landlord, Rental, Lease, Tenancy, Crypto, TEN, Cryptocurrency" />
 
         <link
           rel="stylesheet"

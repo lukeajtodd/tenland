@@ -1,6 +1,4 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
 
 import Newsletter from '../components/Newsletter'
 import Card from '../components/Card'
@@ -74,8 +72,6 @@ const Home: NextPage = () => {
     },
   ]
 
-  const currentStage = 0
-
   return (
     <>
       <div className="container py-24 md:py-36 mx-auto flex flex-wrap flex-col md:flex-row justify-center items-center">
@@ -109,8 +105,8 @@ const Home: NextPage = () => {
             <ul>
               <li>Earn while you rent. Be a great tenant and get rewarded.</li>
               <li>
-                Either sell your reward <strong>TEN</strong>/
-                <strong>sTEN</strong> or stake it to have a say in the platform.
+                Either sell your reward <strong>TEN</strong> or your staked <strong>TEN</strong>
+                (in the form of <strong>sTEN</strong>) or stake it and save.
               </li>
               <li>
                 Use your <strong>TEN</strong> &amp; <strong>sTEN</strong> with
@@ -126,7 +122,7 @@ const Home: NextPage = () => {
               <li>
                 <strong>TEN</strong> will be used to list properties, with the
                 power to promote these properties to increase your likelihood of
-                finding a tenant
+                finding a tenant.
               </li>
               <li>
                 NFTs will be minted to certify that you have listed a specific
@@ -157,7 +153,7 @@ const Home: NextPage = () => {
               </p>
               <p>
                 As a tenant or a landlord you will be rewarded for being a
-                decent human being.
+                decent human being and from being involved.
               </p>
               <p>
                 Acting in a way that promotes great relationships and aids in
