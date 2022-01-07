@@ -9,17 +9,17 @@ const Home: NextPage = () => {
       title: 'Phase 0',
       date: '28th February 2022',
       content:
-        'Gauge initial interest at a base level before the project goes too far.',
+        'Gauge initial interest before the project goes too far.',
     },
     {
       title: 'The Platform',
-      date: '31st March 2022',
+      date: 'TBD',
       content:
         'Creation of the user-facing UI along with any dashboards, control centers and profiles (A general idea of the smart contract layer will be organised and verified at this stage as well).',
     },
     {
       title: 'The Platform Part 2',
-      date: '31st April 2022',
+      date: 'TBD',
       content:
         'Creation of the smart contracts that will handle the TEN token, property NFT generation and staking and reward systems. This will be the deciding moment for which chain this is going to run with.',
     },
@@ -195,7 +195,8 @@ const Home: NextPage = () => {
           <h2 className="text-2xl md:text-4xl lg:text-7xl text-body font-bold leading-tight">
             Roadmap
           </h2>
-          <div className="flex flex-row flex-wrap">
+          <p>This could change, other bits could take priority. Any updates will be broadcast via email!</p>
+          <div className="flex flex-row flex-wrap mt-8">
             {roadmap.map((item, index) => (
               <div className="md:pr-8 w-full" key={index}>
                 <Card className="mb-8" {...item} />
