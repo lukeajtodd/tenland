@@ -25,6 +25,11 @@ const Layout: FC<{}> = ({ children }) => {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Sora:wght@300;400;600;700&display=swap"
           rel="stylesheet"
         />
+        {/* <meta property="og:title" content="Tenland - The new face of rentals" />
+        <meta property="og:description" content="A platform for Landlords and Tenants to live happier more profitable lives."" />
+        <meta property="og:image" content={`/open-graph/${pageProps.ogImage}`} />
+        <meta property="og:image:width" content={FacebookOpenGraph.width} />
+        <meta property="og:image:height" content={FacebookOpenGraph.height} /> */}
       </Head>
       <div className="primary-header leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed">
         <div className="h-screen p-6">
